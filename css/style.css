@@ -54,6 +54,21 @@ body {
     margin-left: 10px
 }
 
+.nav__badge__favor {
+    position: absolute;
+    top: 2px;
+    right: -5px;
+    min-width: 16px;
+    height: 10px;
+    padding: 0 3px;
+    text-align: center;
+    background: #dc892a;
+    border-radius: 8px;
+    font-size: 10px;
+    line-height: 11px;
+    color: #fff
+}
+
 .nav__badge {
     position: absolute;
     top: 2px;
@@ -144,6 +159,26 @@ body {
     font-weight: 700
 }
 
+.goods__favorite {
+    width: 100%;
+    height: 30px;
+    background-color: #dc892a;
+    border: none;
+    outline: 0;
+    margin-top: 20px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer
+}
+
+.goods__favorite:focus {
+    outline: 0
+}
+
+.goods__favorite:hover {
+    box-shadow: 0 0 15px rgba(220, 62, 42, .7)
+}
+
 .goods__btn {
     width: 100%;
     height: 40px;
@@ -161,6 +196,86 @@ body {
 }
 
 .goods__btn:hover {
+    box-shadow: 0 0 15px rgba(220, 62, 42, .7)
+}
+
+.favorite {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3)
+}
+
+.favorite__body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1024px;
+    min-height: 200px;
+    max-height: 640px;
+    background-color: #fff;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    padding: 25px;
+    overflow: auto
+}
+
+.favorite__title {
+    font-size: 28px;
+    color: rgba(0, 0, 0, .4)
+}
+
+.favorite__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px
+}
+
+.favorite__wrapper .empty {
+    font-size: 24px;
+    color: rgba(0, 0, 0, .4)
+}
+
+.favorite__wrapper .goods__item {
+    margin-right: 75px
+}
+
+.favorite__close {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    cursor: pointer
+}
+
+.favorite__total {
+    font-size: 18px
+}
+
+.favorite__total span {
+    color: #dc3e2a
+}
+
+.favorite__confirm {
+    width: 280px;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+    background-color: #dc3e2a;
+    border: none;
+    outline: 0;
+    margin-top: 20px;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer
+}
+
+.favorite__confirm:focus {
+    outline: 0
+}
+
+.favorite__confirm:hover {
     box-shadow: 0 0 15px rgba(220, 62, 42, .7)
 }
 

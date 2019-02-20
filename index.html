@@ -28,9 +28,10 @@
                     </form>
                 </div>
                 <div class="col-lg-2">
-                    <div class="nav">
+                    <div class="nav" id="favorite">
                         <div class="nav__item">
                             <img src="icons/like.svg" alt="like">
+                            <div class="nav__badge__favor">0</div>
                         </div>
                         <div class="nav__title">Избранное</div>
                     </div>
@@ -58,6 +59,26 @@
     <div class="goods">
         <div class="container">
             <div class="goods__wrapper">
+            </div>
+        </div>
+    </div>
+
+    <div class="favorite">
+        <div class="favorite__body">
+            <div class="favorite__title">Избранное</div>
+            <div class="favorite__total">Общая сумма: <span>0</span> руб</div>
+            <hr>
+            <div class="favorite__wrapper">
+                <div class="empty">
+                    Избранных нет
+                </div>
+            </div>
+            <div class="favorite__close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
             </div>
         </div>
     </div>
