@@ -33,7 +33,6 @@ window.addEventListener('DOMContentLoaded', () => {
             trigger.remove();
 
             showConfirm();
-            calcGoods(1);
 
             removeBtn.classList.add('goods__item-remove');
             removeBtn.innerHTML = '&times';
@@ -44,6 +43,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 empty.style.display = 'none';
             }
 
+            calcGoods();
             calcTotal();
             removeFromCart();
         });
@@ -81,9 +81,9 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     //Счетчик к-ва товаров в корзине    
-    function calcGoods(i) {
+    function calcGoods() {
         const items = cartWrapper.querySelectorAll('.goods__item');
-        badge.textContent = i + items.length;
+        badge.textContent = items.length;
 
         let empty = cartWrapper.querySelector('.empty');
         if (badge.textContent < 1) {
@@ -108,9 +108,10 @@ window.addEventListener('DOMContentLoaded', () => {
             btn.addEventListener('click', () => {
                 btn.parentElement.remove();
 
-                calcGoods(0);
+                calcGoods();
                 calcTotal();
             });
         });
     }
+
 });
